@@ -1,7 +1,7 @@
 # Plex Landing Page
 Landing Page for a Plex Server
 
-** riginal code and assets came from here: https://github.com/ITRav4/PlexRedirect**
+**Original code and assets came from here: https://github.com/ITRav4/PlexRedirect**
 
 **Changes:**
 
