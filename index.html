@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" type="image/x-icon" href="plexlanding.ico" />
+    <title>Plex Status</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Plex landing page">
+    <meta name="author" content="Slamanna212">
+
+    <!-- CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.min.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href='//fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body onload="checkServer()" class="offline">    
+    <!-- Fixed navbar -->
+
+    <div id="headerwrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1>Plex Status:</h1>
+                    <h4 id="server-status-msg">Checking...</h4><br/>
+                    <div class="form-actions">
+                    <a href="https://app.plex.tv/web/app" target="blank" class="button">Launch Plex</a>
+                    <p></p>
+                    <button type="button" class="btn" data-toggle="modal" data-target="#myModal">Help</button>
+                    </div>
+                    <br/>
+                    <br/>
+                    <form class="form-inline">
+                      <div class="form-group">
+                      </div>
+                                    
+                </div><!-- /col-lg-6 -->
+                <div class="col-lg-6">
+                    <img id="server-status-img" class="img-responsive" src="img/ipad-hand.png" alt="">
+                </div><!-- /col-lg-6 -->
+                
+            </div><!-- /row -->
+        </div><!-- /container -->
+    </div><!-- /headerwrap -->
+
+<!-- Modal -->
+<div id="myModal" class="modal custom fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Help</h4>
+      </div>
+      <div class="modal-body">
+        <p>There are 3 different tabs at the top of this webpage.</p>
+        <h4>Status</h4>
+        <p>This is the page you are on now. Here you can verify that the Plex server is working. If you click "Launch Plex" it will start Plex in your web browser.</p>
+        <h4>Request Something</h4>
+        <p>Click "Request Something" to bring up the requests page. Just type in your Plex username and click "Sign In." From here you can search for Movies and TV Shows to have them added to the Plex server.</p>
+        <h4>Whats New</h4>
+        <p>Click "Whats New" to bring up the recently added page. Here you can view what's new on the Plex server this week. It's a web version of the weekly email that you receive.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Add javascript at end-->
+<script src="js/ping.js"></script>
+<script src="js/plex.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
