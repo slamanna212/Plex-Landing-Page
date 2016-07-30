@@ -14,11 +14,12 @@ Code changed to just show Plex Status
 Code redone for standards and readability reasons
 
 **Quick Start**
+
 Clone this code to a web server directory and add your plex servers hostname/IP address on line 33 of plex.js
 
 You can change the text of the Help Modal by editing the text that starts on line 61 of index.php
 
-**Screenshot**
+**Screenshots**
 
 ![onfirstload](https://i.imgur.com/o5GWPCe.png)
 
